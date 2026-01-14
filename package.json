@@ -1,4 +1,5 @@
 {
+  "license": "MIT",
   "name": "graphql-safe-depth",
   "version": "0.1.4",
   "description": "Lightweight GraphQL validation rule to limit query depth",
@@ -21,7 +22,6 @@
     "nestjs"
   ],
   "author": "Mateo diaz lopez <mateodiaz401@gmail.com> (https://www.linkedin.com/in/mateo-diaz-lopez/)",
-  "license": "MIT",
   "type": "module",
   "module": "dist/index.js",
   "exports": {
@@ -42,10 +42,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mateodiaz401/raphql-safe-depth.git"
+    "url": "https://github.com/Mateodiaz401/graphql-safe-depth.git"
   },
-  "homepage": "https://github.com/Mateodiaz401/raphql-safe-depth",
+  "homepage": "https://github.com/Mateodiaz401/graphql-safe-depth",
   "bugs": {
-    "url": "https://github.com/Mateodiaz401/raphql-safe-depth/issues"
+    "url": "https://github.com/Mateodiaz401/graphql-safe-depth/issues"
   }
 }

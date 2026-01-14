@@ -60,7 +60,7 @@ GraphQLModule.forRoot({
 
 ```
 
-# Options
+## ⚙️ Options
 
 ```bash
 createDepthLimitRule({
@@ -70,7 +70,7 @@ createDepthLimitRule({
 });
 ```
 
-`bash maxDepth ` (required)
+### maxDepth (required)
 
 Maximum allowed depth for a query
 
@@ -82,8 +82,8 @@ createDepthLimitRule({ maxDepth: 3 });
 ignoreIntrospection  (default: true)
 ```
 
-If true , GraphQL introspection fields (**schema, **type, \_\_typename)
-are ignored when calculating depth.
+If true , GraphQL introspection fields
+(**schema, **type, \_\_typename) are ignored when calculating depth.
 
 ```bash
 createDepthLimitRule({
@@ -92,7 +92,7 @@ createDepthLimitRule({
 });
 ```
 
-message (optional)
+### message (optional)
 
 Custom error message generator.
 
@@ -105,7 +105,7 @@ createDepthLimitRule({
 
 ```
 
-How depth is calculated
+## 📐 How depth is calculated
 
 Depth is calculated based on the deepest execution path, not the number of fields.
 
@@ -135,10 +135,14 @@ query {
 }
 ```
 
-Testing
+## 🧪 Testing
 
 ```bash
 npm test
 or
 yarn test
 ```
+
+## 📄 License
+
+MIT © Mateo Diaz
