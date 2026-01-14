@@ -1,4 +1,4 @@
-# graphql-depth-limit-lite
+# graphql-safe-depth
 
 A lightweight and dependency-free GraphQL validation rule to limit query depth.
 
