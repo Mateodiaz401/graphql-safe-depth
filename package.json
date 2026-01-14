@@ -1,6 +1,6 @@
 {
   "name": "graphql-safe-depth",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Lightweight GraphQL validation rule to limit query depth",
   "main": "dist/index.cjs",
   "types": "dist/index.d.ts",
