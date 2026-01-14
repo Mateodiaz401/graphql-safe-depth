@@ -23,9 +23,9 @@ and predictable way to prevent overly deep GraphQL queries.
 ## 📦 Installation
 
 ```bash
-npm install graphql-depth-limit-lite
+npm npm i graphql-safe-depth
 or
-yarn add graphql-depth-limit-lite
+yarn add  graphql-safe-depth
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ yarn add graphql-depth-limit-lite
 
 ```bash
 import { ApolloServer } from "apollo-server";
-import { createDepthLimitRule } from "graphql-depth-limit-lite";
+import { createDepthLimitRule } from "graphql-safe-depth";
 
 const server = new ApolloServer({
   typeDefs,
@@ -49,7 +49,7 @@ const server = new ApolloServer({
 ## Apollo Server (NestJS)
 
 ```bash
-import { createDepthLimitRule } from "graphql-depth-limit-lite";
+import { createDepthLimitRule } from "graphql-safe-depth";
 
 GraphQLModule.forRoot({
   autoSchemaFile: true,
