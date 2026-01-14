@@ -3,7 +3,7 @@
   "name": "graphql-safe-depth",
   "version": "0.1.7",
   "description": "Lightweight GraphQL validation rule to limit query depth",
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
@@ -21,16 +21,7 @@
     "apollo",
     "nestjs"
   ],
-  "author": "Mateo diaz lopez <mateodiaz401@gmail.com> (https://www.linkedin.com/in/mateo-diaz-lopez/)",
-  "type": "module",
-  "module": "dist/index.js",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
-    }
-  },
+  "author": "Mateo diaz lopez <mateodiaz401@gmail.com>",
   "peerDependencies": {
     "graphql": "^14.0.0 || ^15.0.0 || ^16.0.0"
   },
