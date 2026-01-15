@@ -1,5 +1,7 @@
 # graphql-safe-depth
 
+> Lightweight, predictable and production-ready GraphQL depth limiting.
+
 ![npm](https://img.shields.io/npm/v/graphql-safe-depth)
 ![downloads](https://img.shields.io/npm/dm/graphql-safe-depth)
 ![license](https://img.shields.io/npm/l/graphql-safe-depth)
@@ -55,37 +57,31 @@ yarn add graphql-safe-depth
 
 ## Apollo Server (Node.js)
 
-```bash
+```ts
 import { ApolloServer } from "apollo-server";
 import { createDepthLimitRule } from "graphql-safe-depth";
 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  validationRules: [
-    createDepthLimitRule({ maxDepth: 3 }),
-  ],
+  validationRules: [createDepthLimitRule({ maxDepth: 3 })],
 });
-
 ```
 
 ## Apollo Server (NestJS)
 
-```bash
+```ts
 import { createDepthLimitRule } from "graphql-safe-depth";
 
 GraphQLModule.forRoot({
   autoSchemaFile: true,
-  validationRules: [
-    createDepthLimitRule({ maxDepth: 5 }),
-  ],
+  validationRules: [createDepthLimitRule({ maxDepth: 3 })],
 });
-
 ```
 
 ## ⚙️ Options
 
-```bash
+```ts
 createDepthLimitRule({
   maxDepth: number;
   ignoreIntrospection?: boolean;
@@ -97,18 +93,18 @@ createDepthLimitRule({
 
 Maximum allowed depth for a query
 
-```bash
+```ts
 createDepthLimitRule({ maxDepth: 3 });
 ```
 
-```bash
+```ts
 ignoreIntrospection  (default: true)
 ```
 
 If true , GraphQL introspection fields
 (**schema, **type, \_\_typename) are ignored when calculating depth.
 
-```bash
+```ts
 createDepthLimitRule({
   maxDepth: 3,
   ignoreIntrospection: false,
@@ -165,11 +161,9 @@ performance issues or denial-of-service scenarios.
 
 It is recommended to combine it with:
 
-Query complexity limits
-
-Proper authentication & authorization
-
-Rate limiting
+- Query complexity limits
+- Proper authentication & authorization
+- Rate limiting
 
 ## 🧪 Testing
 
