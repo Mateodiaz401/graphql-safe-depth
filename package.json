@@ -1,7 +1,7 @@
 {
   "license": "MIT",
   "name": "graphql-safe-depth",
-  "version": "0.1.8",
+  "version": "1.0.0",
   "description": "Lightweight GraphQL validation rule to limit query depth",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
